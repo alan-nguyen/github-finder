@@ -8,9 +8,28 @@
       rel="stylesheet"
       href="https://bootswatch.com/4/lux/bootstrap.min.css"
     />
-    <title>Github Finder</title>
+    <title>GitHub Finder</title>
   </head>
   <body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+      <div class="container">
+        <a href="#" class="navbar-brand">GitHub Finder</a>
+      </div>
+    </nav>
+    <div class="container searchContainer">
+      <div class="search card card-body">
+        <h1>Search GitHub Users</h1>
+        <p class="lead">Enter a user to fetch a user profile and repos</p>
+        <input
+          type="text"
+          id="searchUser"
+          class="form-control"
+          placeholder="GitHub Username..."
+        />
+      </div>
+      <br />
+      <div id="profile"></div>
+    </div>
     <!-- Bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -27,5 +46,9 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <script src="github.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
