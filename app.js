@@ -7,5 +7,9 @@ searchUser.addEventListener("keyup", e => {
   const userText = e.target.value;
 
   if (userText !== "") {
+    // Make http call
+    GitHub.getUser(userText).then(data => {
+      console.log(data);
+    });
   }
 });
