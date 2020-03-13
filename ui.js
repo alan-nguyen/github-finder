@@ -46,6 +46,11 @@ class UI {
     const search = document.querySelector('.search');
     // Insert alert
     container.insertBefore(div, search);
+
+    // Timeout after 3 sec
+    setTimeout(() => {
+      this.clearAlert();
+    }, 3000);
   }
   // Clear alert message
   clearAlert() {
