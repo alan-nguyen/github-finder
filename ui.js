@@ -31,7 +31,7 @@ class UI {
     `;
   }
   // Show alert message
-  showAlert() {
+  showAlert(message, className) {
     // Create div
     const div = document.createElement('div');
     // Add classes
